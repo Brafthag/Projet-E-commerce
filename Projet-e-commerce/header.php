@@ -1,3 +1,8 @@
+<?php 
+session_start(); 
+include "cookie.php";
+?>
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <div class="row">
         <div class="col-sm-8">
@@ -23,6 +28,13 @@
                 <a href="Connexion.php.php"<i class="fa fa-fw fa-user"></i> Connexion</a>
                 <!--<a href="#contact">Panier</a>-->
                <!-- <a href="#contact"><img src="Panier.png" width="50" heigth="50"></a>-->
+                <?php if($_SESSION["mail"]  == "visiteur"){
+                    echo "Bonjour petit " . $_SESSION["mail"];
+                } 
+                else {
+                    echo "Bonjour ".$_SESSION["prenom"]. " ". $_SESSION["nom"];
+                }
+                ?>
             </div>
         </div>
     </div>

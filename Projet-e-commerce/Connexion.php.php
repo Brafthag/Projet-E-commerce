@@ -1,16 +1,13 @@
 <?php
-
+session_start();
 include "connexion.php";
+include "cookie.php";
+
 
 $email = isset($_POST['email']) ? $_POST['email'] : NULL;
 $password = isset($_POST['mdp']) ? $_POST['mdp'] : NULL;
-var_dump($email);
 
-if($email == null && $password == null) {
-    unset($_COOKIE['nom']);
-    unset($_COOKIE['prenom']);
-
-}
+$_SESSION['mail'] = $_POST['email'];
 
 
 $reponse = $connextion->query("SELECT * FROM compte WHERE email = '$email'");
@@ -18,12 +15,17 @@ var_dump($reponse);
 $donnees = $reponse->fetch();
 var_dump($donnees);
 
+$_SESSION['nom'] = $donnees["nom"];
+$_SESSION['prenom'] = $donnees["prenom"];
+
+
 $hashed_password = password_hash($password,PASSWORD_ARGON2I);
 $verif_password = password_verify($password,$donnees['password']);
 
 
+
 if ($verif_password == true){
-    echo 'bienvenue '. $_COOKIE['nom']. ' '. $_COOKIE['prenom'];
+    echo 'bienvenue '. $_SESSION['prenom']. ' '. $_SESSION['nom'];
 }
 else {
     echo 'Le mot de passe ou le le mail est pas le bon';

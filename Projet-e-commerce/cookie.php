@@ -1,7 +1,22 @@
 <?php 
-include "Connexion.php.php";
-setcookie('nom', $donnees['Nom'], time() + 365*24*3600, null, null, false, true);
-setcookie('prenom', $donnees['Prenom'], time() + 365*24*3600, null, null, false, true);
 
+$pseudo = (isset($_SESSION['mail'])) ? $_SESSION['mail'] : 'visiteur';
+var_dump($pseudo);
+if ($pseudo!="visiteur" && $pseudo!="") {//=== il est dejas logue
 
+}
+else {
+$pseudoCookie = (isset($_COOKIE['pseudo'])) ? $_COOKIE['pseudo'] : 'visiteur';
+$mdp = (isset($_COOKIE['mdp'])) ? $_COOKIE['mdp'] : '';
+if ($pseudoCookie !="visiteur" && $pseudoCookie !="")
+ {
+    //=== il est dejas logue sans session on lui crée
+    // mais avant on controle dans Mysql si mdp==OK
+    $pseudo = $pseudoCookie;
+    $_SESSION['pseudo']=$pseudoCookie;
+
+    setCookie('nom',$nom,(time()+60*60*24*365));
+    setCookie('prenom',$prenom,(time()+60*60*24*365));
+ }
+}
 ?>
