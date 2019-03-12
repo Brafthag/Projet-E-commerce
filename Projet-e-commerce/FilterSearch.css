@@ -1,0 +1,125 @@
+.filterSearch{
+    float: left;
+    background-color: wheat;
+    height: 100%;
+    width: 11vw;
+    margin-bottom: auto;
+    padding-bottom: 10px
+}
+
+.blockTitle{
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: dimgrey;
+    background-color: None
+}
+
+.filter-category {
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 5px;
+    padding: 5px;
+    color: darksalmon;
+    background-color: #566a7e;
+}
+
+.choice{
+    font-size: 15px;
+}
+
+.submit{
+    text-align: center
+}
+.btn{
+    padding-bottom: 3px;
+    padding-top: 3px;
+    color: #f38921;
+}
+.btn:hover{
+    color: #f38921;
+    background-color: lightgray;
+    border-color: chocolate
+  }
+
+
+/* --- Slider prix --- */
+#amount{
+    border: 0;
+    float: right;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #f38921;
+    background-color: wheat;
+    font-weight:bold;
+}
+
+/* --- Checkbox --- */
+.check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+    /* Cache la checkbox par défaut du navigateur */
+.check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+    /* Customise la checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 20px;
+    margin-left: 6px;
+    margin-top: 6px;
+}
+.check:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+    /* Quand la checkbox est cochée, ajoute un fond bleu */
+.check input:checked ~ .checkmark {
+    background-color: chocolate;
+}
+    /* Créer une encoche pour la case cochée */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+    /* Afficher l'encoche */
+.check input:checked ~ .checkmark:after {
+    display: block;
+}
+    /* Design de l'encoche */
+.check .checkmark:after {
+    left: 8px;
+    top: 5px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+

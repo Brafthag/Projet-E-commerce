@@ -1,0 +1,476 @@
+.lecorp {
+
+    margin: 0;
+}
+
+.navbar{
+    background-color: #424242;
+    overflow: hidden;
+    width: 100%;
+}
+
+.bandeau_film{
+
+    background-color: #fff400;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    top: 296px; 
+    margin-top: 150px; 
+}
+
+.synopsis{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 227px;
+    font-size: 16px;
+    position: absolute;
+    left: 173px;
+    top: 295px;
+    
+}
+
+.synopsis2{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 594px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 594px;
+    
+} 
+
+.synopsis3{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 594px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 902px;
+    
+} 
+
+.synopsis4{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 594px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 1201px;
+    
+} 
+
+.synopsis5{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 594px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 1500px;
+    
+} 
+
+.synopsis6{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 594px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 1800px;
+    
+} 
+
+.synopsis7{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 594px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 2100px;
+    
+} 
+
+.synopsis8{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 594px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 2400px;
+    
+} 
+
+.synopsis9{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 594px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 2700px;
+    
+} 
+
+.synopsis10{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 594px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 3000px;
+    
+} 
+
+.titre p{
+    color: black;
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px; 
+    margin-top: -282px; 
+    
+    
+}
+
+.Film{
+    background-color: yellow;
+    width: 100%;
+}
+
+
+
+.Aladin{
+    background-color: hsl(49, 37%, 70%);
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0px;
+    top: 300px;
+    border-radius: 100px;
+}
+
+.Aladin p{
+    margin-inline-start: 0px;
+    margin-inline-end: 550px;
+    font-size: 16px;
+    position: absolute;
+    left: 170px;
+    top: 15px;
+    
+}
+
+.Aladin a{
+
+    margin-inline-start: 0px;
+    margin-inline-end: -500px;
+    font-size: 16px;
+    position: absolute;
+    left: 170px;
+    top: 15px;
+}
+.Aladin form{
+
+    position: absolute;
+    display: block;
+    left: 1000px;
+    top: 10px;
+
+}
+.Venom{
+    background-color: hsl(49, 37%, 70%);
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 600px;
+    width: 100%;
+    border-radius: 100px;
+}
+
+.Venom p{
+    margin-inline-start: 0px;
+    margin-inline-end: 227px;
+    font-size: 16px;
+    position: absolute;
+    left: 170px;
+    top: 15px;
+}
+
+
+.Venom form{
+
+    position: absolute;
+    display: block;
+    left: 1000px;
+    top: 10px;
+
+}
+
+.Premiere_annee{
+    background-color: hsl(49, 37%, 70%);
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0px;
+    top: 900px;
+    border-radius: 100px;
+}
+
+.Premiere_annee p{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 550px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 25px;
+
+}
+
+.Premiere_annee form{
+
+    position: absolute;
+    display: block;
+    left: 1000px;
+    top: 25px;
+
+}
+
+.La_nonne{
+    background-color: hsl(49, 37%, 70%);
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0px;
+    top: 1200px;
+    border-radius: 100px;
+}
+
+.La_nonne p{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 550px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 25px;
+
+}
+
+.La_nonne form{
+
+    position: absolute;
+    display: block;
+    left: 1000px;
+    top: 25px;
+
+}
+
+.roi{
+    background-color: hsl(49, 37%, 70%);
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0px;
+    top: 1500px;
+    border-radius: 100px;
+}
+
+.roi p {
+
+    margin-inline-start: 0px;
+    margin-inline-end: 550px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 25px;
+
+}
+
+.roi form{
+
+    position: absolute;
+    display: block;
+    left: 1000px;
+    top: 25px;
+}
+
+.jonquille{
+    background-color: hsl(49, 37%, 70%);
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0px;
+    top: 1800px;
+    border-radius: 100px;
+}
+
+.jonquille p{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 550px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 25px;
+
+}
+
+.jonquille form{
+
+    position: absolute;
+    display: block;
+    left: 1000px;
+    top: 25px;
+}
+
+.horloge{
+    background-color: hsl(49, 37%, 70%);
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0px;
+    top: 2100px;
+    border-radius: 100px;
+}
+
+.horloge p{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 550px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 25px;
+
+}
+
+.horloge form{
+
+    position: absolute;
+    display: block;
+    left: 1000px;
+    top: 25px;
+}
+
+.star{
+    background-color: hsl(49, 37%, 70%);
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0px;
+    top: 2400px;
+    border-radius: 100px;
+}
+
+.star p{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 550px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 25px;
+
+}
+
+.star form{
+
+    position: absolute;
+    display: block;
+    left: 1000px;
+    top: 25px;
+}
+
+.hotel{
+    background-color: hsl(49, 37%, 70%);
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0px;
+    top: 2700px;
+    border-radius: 100px;
+}
+
+.hotel p{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 550px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 25px;
+
+}
+
+.hotel form{
+
+    position: absolute;
+    display: block;
+    left: 1000px;
+    top: 25px;
+}
+
+.danse{
+    background-color: hsl(49, 37%, 70%);
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0px;
+    top: 3000px;
+    border-radius: 100px;
+}
+
+.danse p{
+
+    margin-inline-start: 0px;
+    margin-inline-end: 550px;
+    font-size: 16px;
+    position: absolute;
+    left: 171px;
+    top: 25px;
+
+}
+
+.danse form{
+
+    position: absolute;
+    display: block;
+    left: 1000px;
+    top: 25px;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: 43px;
+    font-family: Arial;
+}
+.navbar a:hover{
+	background-color: #121212;
+	height:100%;
+}
+#royalimg{
+	margin-top: 20px;
+}
+.logo{
+	margin: 10px 10px 10px 10px;
+	float: left;
+}
+.menubar{
+	height: 43px;
+}

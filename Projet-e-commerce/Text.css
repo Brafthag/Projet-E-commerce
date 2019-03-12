@@ -1,0 +1,50 @@
+
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+    }
+#container{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#recherche{
+    border: solid 1px gray;
+    width: 20%;
+    float: left;
+}
+
+.block{
+    border: 2px solid black;
+    color: white;
+    font-size: 20px;
+    height: 46%;
+    width: 13%;
+    margin-right: 3%;
+    margin-left: 3%;
+
+}
+
+
+body {
+    margin: 0;
+}
+
+
+.row {
+    background-color: #595f64ad;
+    margin-right: 0px
+}
+
+h1{
+    color: white
+}
+
+#footer{
+    align-self: flex-end;
+    width: 1000px;
+    height: 100px;
+    background: rgba(109,101,149,1)
+}

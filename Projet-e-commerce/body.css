@@ -1,0 +1,15 @@
+div.formulaireCompte{
+    display: flex;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    float: none;
+}
+
+div.menu{
+    width: 400px;
+    height: 200px;
+    display: grid;
+    float: left;
+    
+}

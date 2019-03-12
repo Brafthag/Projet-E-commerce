@@ -1,0 +1,13 @@
+.Titre{
+
+    color: black;
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px; 
+    margin-top: -282px; 
+    
+}
