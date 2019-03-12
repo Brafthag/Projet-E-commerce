@@ -1,5 +1,7 @@
 <?php 
+if(empty($_SESSION)) {
 session_start(); 
+}
 include "cookie.php";
 ?>
 
@@ -40,10 +42,10 @@ include "cookie.php";
     </div>
     <div class="topnav">
         <a class="active" href="beta.php">Home</a>
-        <a href="#">Nouvautés</a>
+        <a href="parchemin.php">Parchemins</a>
         <a href="potion.php">Potion</a>
-        <a href="#">Recette</a>
-        <a href="livre.html">Livre de sort</a>
+        <a href="Accessoirs_et_equipements.php">Accessoirs et Equipements</a>
+        <a href="Livres.php">Livre de sort</a>
         <form>
          <input type="text" placeholder="Rechercher" aria-label="Search">
          <button type="submit">Rechercher</button>
@@ -56,10 +58,10 @@ include "cookie.php";
     <div class="w3-sidebar w3-light-grey" id="mySidebar" style="display: none">
     <button onclick="fermer()" class="w3-bar-item w3-large">Fermer &times;</button>
     <a href="beta.php" class="w3-sidebar-item w3-button">Home</a>
-    <a href="#" class="w3-sidebar-item w3-button">Nouvautés</a>
-    <a href="potion.html" class="w3-sidebar-item w3-button">Potion</a>
+    <a href="#" class="w3-sidebar-item w3-button">Parchemins</a>
+    <a href="potion.php" class="w3-sidebar-item w3-button">Potion</a>
     <a href="#" class="w3-sidebar-item w3-button">Potion</a>
-    <a href="livre.html" class="w3-sidebar-item w3-button">Potion</a>   
+    <a href="Livres.php" class="w3-sidebar-item w3-button">Potion</a>   
     <form>
          <!--<input type="text" class="w3-sidebar" placeholder="Rechercher" aria-label="Search" style="width: 10%">-->
          <!--<button type="submit" class="w3-sidebar">Rechercher</button>-->

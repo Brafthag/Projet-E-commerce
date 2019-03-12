@@ -64,7 +64,7 @@
 
     include "connexion.php";
     echo "<ul id ='myUl'>";
-    $reponse = $connextion->query("SELECT * FROM produit where nomCategorie LIKE '%Livre%'");
+    $reponse = $connextion->query("SELECT * FROM produit where categorie = '4'");
     while ($donnees = $reponse->fetch()){
         $random =  rand ( 0 , 1);
         if ($random == 0){
@@ -76,7 +76,7 @@
         echo "<li id ='ilferbo'>";
         
         echo "<div class='w3-card-4 w3-margin-left' style='width:45%;".$result."'"."id='produit'>";
-        echo"<img src='".$donnees["img"]."'"."width='100%'"."height='80%'".">";
+        echo"<img src='".$donnees["img"]."'"."width='450px'"."height='330px'".">";
         echo" <div class='w3-container w3-center'> <a href ='".$donnees['nomProduit']."'".">".$donnees['nomProduit']."</a>";
 
         echo "</div>";
@@ -99,8 +99,11 @@
 <style>
     #ilferbo {
         list-style-type: none;
+        margin : none;
     }
     #produit {
+        max-width : 450px;
+        max-height: 505px;
         min-width : 450px;
         min-height: 505px;
         padding : 5px;

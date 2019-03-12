@@ -4,19 +4,17 @@ include "connexion.php";
 include "cookie.php";
 
 
-$email = isset($_POST['email']) ? $_POST['email'] : NULL;
+$email = isset($_POST['email']) ? $_POST['email'] : 'visiteur';
 $password = isset($_POST['mdp']) ? $_POST['mdp'] : NULL;
 
-$_SESSION['mail'] = $_POST['email'];
+$_SESSION['mail'] = $email;
 
 
 $reponse = $connextion->query("SELECT * FROM compte WHERE email = '$email'");
-var_dump($reponse);
 $donnees = $reponse->fetch();
-var_dump($donnees);
 
-$_SESSION['nom'] = $donnees["nom"];
-$_SESSION['prenom'] = $donnees["prenom"];
+
+
 
 
 $hashed_password = password_hash($password,PASSWORD_ARGON2I);
@@ -25,14 +23,42 @@ $verif_password = password_verify($password,$donnees['password']);
 
 
 if ($verif_password == true){
-    echo 'bienvenue '. $_SESSION['prenom']. ' '. $_SESSION['nom'];
+    if ($_SESSION["mail"] == 'visiteur'){
+    $_SESSION['nom'] = $donnees["nom"];
+    $_SESSION['prenom'] = $donnees["prenom"];
+    }
 }
 else {
     echo 'Le mot de passe ou le le mail est pas le bon';
 }
+?>
 
-include "header.php";
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Petit test">
+    <meta name="author" content="Moi">
+    <link rel="SHORTCUT ICON" href="Potion.png">
 
+    <title>Beta test</title>
+    <!-- Bootstrap core CSS -->
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="body.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="Navbar.css" rel="stylesheet">
+    <link href="Text.css" rel="stylesheet">
+</head>
+
+<body>
+
+<?php
+    include "header.php";
 ?>
 
 

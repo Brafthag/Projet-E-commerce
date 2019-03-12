@@ -74,7 +74,8 @@
         }
 
         echo "<li id ='ilferbo'>";
-        echo "<div class='w3-card-4 w3-margin-left'style='width:45%;".$result."'"."id='produit1>";
+        
+        echo "<div class='w3-card-4 w3-margin-left' style='width:45%;".$result."'"."id='produit'>";
         echo"<img src='".$donnees["img"]."'"."width='100%'"."height='80%'".">";
         echo" <div class='w3-container w3-center'> <a href ='".$donnees['nomProduit']."'".">".$donnees['nomProduit']."</a>";
 
@@ -88,17 +89,6 @@
         echo "</div>";
         echo("<br>");
         echo "</li>";
-
-    //  $i += 1;
-    //     echo "Stock : ";
-    //     echo($donnees[3]);
-    //     echo(" exemplaires");
-    //     echo "<br>";
-    //     echo "Catégorie : ";
-    //     echo($donnees[5]);
-    //     echo "<br>";
-    //     echo($donnees["description"]);
-    //     echo "<br>";
     }
     echo "</ul>";
     $reponse->closeCursor();
@@ -109,6 +99,11 @@
 <style>
     #ilferbo {
         list-style-type: none;
+    }
+    #produit {
+        min-width : 450px;
+        min-height: 505px;
+        padding : 5px;
     }
 </style>
 <script>

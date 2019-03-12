@@ -64,7 +64,7 @@
 
     include "connexion.php";
     echo "<ul id ='myUl'>";
-    $reponse = $connextion->query("SELECT * FROM produit where nomCategorie LIKE '%Livre%'");
+    $reponse = $connextion->query("SELECT * FROM produit where nomCategorie LIKE '%Parchemins%'");
     while ($donnees = $reponse->fetch()){
         $random =  rand ( 0 , 1);
         if ($random == 0){

@@ -1,7 +1,6 @@
 <?php 
 
 $pseudo = (isset($_SESSION['mail'])) ? $_SESSION['mail'] : 'visiteur';
-var_dump($pseudo);
 if ($pseudo!="visiteur" && $pseudo!="") {//=== il est dejas logue
 
 }
