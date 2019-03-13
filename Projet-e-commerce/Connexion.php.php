@@ -23,13 +23,12 @@ $verif_password = password_verify($password,$donnees['password']);
 
 
 if ($verif_password == true){
-    if ($_SESSION["mail"] == 'visiteur'){
     $_SESSION['nom'] = $donnees["nom"];
     $_SESSION['prenom'] = $donnees["prenom"];
+    
     }
-}
 else {
-    echo 'Le mot de passe ou le le mail est pas le bon';
+    session_destroy();
 }
 ?>
 

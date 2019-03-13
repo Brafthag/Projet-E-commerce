@@ -76,7 +76,7 @@
         echo "<li id ='ilferbo'>";
         
         echo "<div class='w3-card-4 w3-margin-left' style='width:45%;".$result."'"."id='produit'>";
-        echo"<img src='".$donnees["img"]."'"."width='100%'"."height='80%'".">";
+        echo"<img class='w3-center' src='".$donnees["img"]."'"."width='200px'"."height='200px'".">";
         echo" <div class='w3-container w3-center'> <a href ='".$donnees['nomProduit']."'".">".$donnees['nomProduit']."</a>";
 
         echo "</div>";
@@ -85,6 +85,7 @@
         echo "</div>";
         echo "</br>";
         echo" <div class='w3-container w3-center'> <p>".$donnees["description"]."</p>";
+        echo" <a href='#' class='w3-bar-item w3-button w3-orange'>Ajouter au panier</a>";
         echo "</div>";
         echo "</div>";
         echo("<br>");
@@ -104,6 +105,10 @@
         min-width : 450px;
         min-height: 505px;
         padding : 5px;
+    }
+    img {
+        margin : auto;
+        margin-left: 136px;
     }
 </style>
 <script>

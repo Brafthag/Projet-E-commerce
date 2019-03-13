@@ -2,6 +2,9 @@
 if(empty($_SESSION)) {
 session_start(); 
 }
+$mail = (isset($_SESSION['mail'])) ? $_SESSION['mail'] : 'visiteur';
+$nom = (isset($_SESSION['nom'])) ? $_SESSION['nom'] : null;
+$prenom = (isset($_SESSION['prenom'])) ? $_SESSION['prenom'] : null;
 include "cookie.php";
 ?>
 
@@ -26,15 +29,21 @@ include "cookie.php";
         </div>
         <div class="col-lg-4"> 
             <div class="nav">
+            
                 <a href="inscription.php">S'enrengistrer</a>
-                <a href="Connexion.php.php"<i class="fa fa-fw fa-user"></i> Connexion</a>
-                <!--<a href="#contact">Panier</a>-->
+                <?php if($mail  == "visiteur") {
+                    echo"<a href='Connexion.php.php'><i class='fa fa-fw fa-user'></i> Connexion</a>";
+                }else {
+                    echo"<a href='Connexion.php.php'><i class='fa fa-fw fa-user'></i> Deconnexion</a>";
+                }
+                ?>
+                <a href="#contact">Panier</a>
                <!-- <a href="#contact"><img src="Panier.png" width="50" heigth="50"></a>-->
-                <?php if($_SESSION["mail"]  == "visiteur"){
-                    echo "Bonjour petit " . $_SESSION["mail"];
+                <?php if($mail  == "visiteur"){
+                    echo "<p style ='color : white; margin-left : 4px'>"."Bonjour petit ".$mail."</p>";
                 } 
                 else {
-                    echo "Bonjour ".$_SESSION["prenom"]. " ". $_SESSION["nom"];
+                    echo "<p style ='color : white; margin-left : 4px'>"."Bonjour ".$prenom. " ". $nom."</p>";
                 }
                 ?>
             </div>

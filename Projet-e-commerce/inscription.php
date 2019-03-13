@@ -20,15 +20,12 @@
             $password8 = password_hash($password, PASSWORD_ARGON2I);
             //$verify = $connextion->query("INSERT INTO compte(prenom, nom, password, email, civilite, adresse, tel) VALUES ('$Prenom', '$Nom', '$password8', '$email','$civilite','$adresse','$tel')");
             $verify = $connextion->query("SELECT email  FROM compte WHERE email = '$email'");
-            var_dump($verify);
             $donnees = $verify->fetch();
-            var_dump($donnees);
             if($donnees["email"] != $email){
 
             $verify = $connextion->query("INSERT INTO `compte` (`IDUtilisateur`, `prenom`, `nom`, `civilite`, `email`, `password`, `adresse`, `tel`) VALUES (NULL, '$Prenom', '$Nom', '$civilite', '$email', '$password8', '$adresse', '$tel')");
             }
             else{
-                echo "nope bro";
             }
         }
 
@@ -182,7 +179,6 @@
         <option value="Soron">Soron</option>
         <option value="Alien">Alien</option>
         <option value="Goblin">Goblin</option>
-        <option value="Jul">Jul</option>
         </select>
     </div>
 
@@ -198,6 +194,12 @@
 
       <button type="submit" class="w3-button w3-block w3-dark-grey" onClick="validateForm()" style="width: 50%">Envoyer</button>
     </form><br>
+    <?php  if($donnees["email"] != $email){ 
+
+        }else {
+            echo "Cette adresse email a deja ete enrengistrer";
+        }
+    ?>
     <!--<audio autoplay="false" id="beep" src="wesh-alors.mp3">-->
   </div>
 

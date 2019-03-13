@@ -13,6 +13,7 @@ if ($pseudoCookie !="visiteur" && $pseudoCookie !="")
     // mais avant on controle dans Mysql si mdp==OK
     $pseudo = $pseudoCookie;
     $_SESSION['pseudo']=$pseudoCookie;
+    var_dump($_SESSION['pseudo']);
 
     setCookie('nom',$nom,(time()+60*60*24*365));
     setCookie('prenom',$prenom,(time()+60*60*24*365));
