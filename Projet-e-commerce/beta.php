@@ -91,14 +91,12 @@
                 <h1>"Le temps qui apporte des remèdes aux maux les rend quelquefois incurables."</h1>
                 <footer> chuck norris</footer>
             </blockquote>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Voir les articles</a></p>
         </div>
     </div>
     <div class="blanc"><p></p></div>
     <div class="row">
             <div class="col-sm-4">
             <img src="livre.png" width='390' heigth='390'>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Voir les articles</a></p>
         </div>
 
         <div class="col-sm-8">

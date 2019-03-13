@@ -37,7 +37,7 @@ include "cookie.php";
                     echo"<a href='Connexion.php.php'><i class='fa fa-fw fa-user'></i> Deconnexion</a>";
                 }
                 ?>
-                <a href="#contact">Panier</a>
+                <a href="panier.php">Panier</a>
                <!-- <a href="#contact"><img src="Panier.png" width="50" heigth="50"></a>-->
                 <?php if($mail  == "visiteur"){
                     echo "<p style ='color : white; margin-left : 4px'>"."Bonjour petit ".$mail."</p>";
@@ -63,14 +63,14 @@ include "cookie.php";
 
         <!-- Navbar sur petit ecran -->
     <div class="w3-left w3-bar-block w3-border-right">
-        <button id="burger" class="w3-button w3-teal w3-xlarge" onclick="ouvert()">☰</button>
+        <button id="burger" class="w3-button w3-xlarge" onclick="ouvert()">☰</button>
     <div class="w3-sidebar w3-light-grey" id="mySidebar" style="display: none">
     <button onclick="fermer()" class="w3-bar-item w3-large">Fermer &times;</button>
     <a href="beta.php" class="w3-sidebar-item w3-button">Home</a>
-    <a href="#" class="w3-sidebar-item w3-button">Parchemins</a>
+    <a href="parmechin.php" class="w3-sidebar-item w3-button">Parchemins</a>
     <a href="potion.php" class="w3-sidebar-item w3-button">Potion</a>
-    <a href="#" class="w3-sidebar-item w3-button">Potion</a>
-    <a href="Livres.php" class="w3-sidebar-item w3-button">Potion</a>   
+    <a href="accesoirs_et_equipements.php" class="w3-sidebar-item w3-button">Accessoirs et Equipements</a>
+    <a href="Livres.php" class="w3-sidebar-item w3-button">Livre de sort</a>   
     <form>
          <!--<input type="text" class="w3-sidebar" placeholder="Rechercher" aria-label="Search" style="width: 10%">-->
          <!--<button type="submit" class="w3-sidebar">Rechercher</button>-->

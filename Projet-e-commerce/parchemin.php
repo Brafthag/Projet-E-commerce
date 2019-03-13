@@ -32,7 +32,7 @@
 <div class="w3-row">
     <div class="w3-col m4 l3">
     <div class="w3-bar-block w3-light-gray">
-        <h2 class="w3-center"> Wesh alors</h2>
+        <h2 class="w3-center"> Filtre de recherche</h2>
         <input type="text" placeholder="Rechercher" onkeyup="tri()"  id="myInput" aria-label="Search">
         </br>
         <span class="filter-category">Prix</span>
@@ -50,9 +50,16 @@
         <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Not Good">2 stars</label>
         <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Bad">1 star</label>
 	</ul>
-        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    <div class="w3-section">
+        <select class="w3-select w3-animate-input" id="jul" name="option" required style="width: 50%">
+        <option value="" disabled selected>Choisisez la marque</option>
+        <option value="Homme">HPFactory</option>
+        <option value="Femme">MortalStuff</option>
+        <option value="Orc">Merlin</option>
+        <option value="Poulet">ScRoll</option>
+        <option value="Elfe">MWander</option>
+        </select>
+    </div>
     </div>
 
     </div>
@@ -78,14 +85,15 @@
         echo "<div class='w3-card-4 w3-margin-left' style='width:45%;".$result."'"."id='produit'>";
         echo"<img class='w3-center' src='".$donnees["img"]."'"."width='200px'"."height='200px'".">";
         echo" <div class='w3-container w3-center'> <a href ='".$donnees['nomProduit']."'".">".$donnees['nomProduit']."</a>";
-
+        echo "<p> Marque : ".$donnees["marque"]."</p>";
         echo "</div>";
         echo("</br>");
         echo" <div class='w3-container w3-center'> <p>".$donnees[2]." €"."</p>";
         echo "</div>";
         echo "</br>";
         echo" <div class='w3-container w3-center'> <p>".$donnees["description"]."</p>";
-        echo" <a href='#' class='w3-bar-item w3-button w3-orange'>Ajouter au panier</a>";
+        echo" <a class='w3-orange w3-button' href='panier.php?action=ajout&amp;l=".$donnees["nomProduit"]."&amp;q=1&amp;p=".$donnees[2]."'". "onclick='window.open(this.href, '', 
+        'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=600, height=350'); return false;'>"."Ajouter au panier</a>";        
         echo "</div>";
         echo "</div>";
         echo("<br>");

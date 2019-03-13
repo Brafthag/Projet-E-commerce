@@ -8,6 +8,7 @@
     $civilite = isset($_POST['option']) ? $_POST['option'] : null;
     $adresse = isset($_POST['Adress']) ? $_POST['Adress']: null;
     $tel = isset($_POST['Phone']) ? $_POST['Phone']: null;
+    $donnee = isset($donnees["email"]) ? $donnees["email"]: null;
     $emailErr = null;
     $nomErr = null;
     $prenomErr = null;
@@ -140,6 +141,13 @@
 
     <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
     <h2 class="w3-center">Inscription</h2>
+    <?php 
+     if($donnee != $email){
+        echo  "<p class='w3-text-green'> Bravo vous etes enrengistrer</p>";
+     }else {
+        echo "<p class='w3-text-red'> Cette adresse email a deja ete utiliser";
+     }
+    ?>
     <hr>
     <form name="myForm" class="w3-margin-right-32" action="inscription.php" method="post">
       <div class="w3-section">
@@ -167,7 +175,7 @@
       </div>
 
       <div class="w3-section">
-        <select class="w3-select w3-animate-input" id="jul" onClick="weshAlors()" name="option" required style="width: 50%">
+        <select class="w3-select w3-animate-input" id="jul" name="option" required style="width: 50%">
         <option value="" disabled selected>Choisisez votre civilité</option>
         <option value="Homme">Homme</option>
         <option value="Femme">Femme</option>
@@ -194,12 +202,6 @@
 
       <button type="submit" class="w3-button w3-block w3-dark-grey" onClick="validateForm()" style="width: 50%">Envoyer</button>
     </form><br>
-    <?php  if($donnees["email"] != $email){ 
-
-        }else {
-            echo "Cette adresse email a deja ete enrengistrer";
-        }
-    ?>
     <!--<audio autoplay="false" id="beep" src="wesh-alors.mp3">-->
   </div>
 
